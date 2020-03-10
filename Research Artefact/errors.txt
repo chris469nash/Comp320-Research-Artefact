@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 50: expected 'label_name' not found.
-    jump in incorrectq4
-        ^
+File "game/script.rpy", line 74: end of line expected.
+    jump Question2:
+                  ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Fri Dec 06 15:17:29 2019
+Tue Mar 10 22:04:18 2020

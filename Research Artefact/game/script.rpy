@@ -28,65 +28,117 @@ label start:
 
     e "Please take your time to answer each question, your data from these results is crucial to my dissertation!"
 
-    # Question 1:
+# Add strings for each
 
+    label Question1:
+    $ currentQuestion = 1
+    $ rightAnswer = "Correct answer"
+    $ wrongAnswer = "Incorrect answer"
+
+    #Question 1 here
     e "Insert debugging question here"
-
     menu:
 
         # Correct answer
-        "Correct answer":
-            jump correctq1
+        "Correct answer 1":
+            jump CorrectAnswer
 
         # Incorrect answer
         "Incorrect answer 1":
-            jump incorrectq1
+            jump IncorrectAnswer
 
         # Incorrect answer
-        "Incorrect answer 2":
-            jump incorrectq2
+        "Incorrect answer 1":
+            jump IncorrectAnswer
 
         # Incorrect answer
-        "Incorrect answer 3":
-            jump incorrectq3
+        "Incorrect answer 1":
+            jump IncorrectAnswer
 
         # Incorrect answer
-        "Incorrect answer 4":
-            jump incorrectq4
+        "Incorrect answer 1":
+            jump IncorrectAnswer
 
         # Correct answer response
-    label correctq1:
 
-        e "Well done!, you chose the correct answer!"
+    label Question2:
+            $ rightAnswer = "Correct answer2"
+            $ wrongAnswer = "Incorrect answer2"
 
-        return
+            #Question 2 here
+            e "Insert question 2"
 
-        #Incorrect answer response
-    label incorrectq1:
+            menu:
 
-        e "Oh no! You chose the incorrect answer!"
+                # Incorrect answer
+                "Incorrect answer 2":
+                    jump incorrectAnswer
 
-        return
+                # Correct answer
+                "Correct answer 2":
+                    jump CorrectAnswer
 
-        #Incorrect answer response
-    label incorrectq2:
+                # Incorrect answer
+                "Incorrect answer 2":
+                    jump IncorrectAnswer
 
-        e "Oh no! You chose the incorrect answer!"
+                # Incorrect answer
+                "Incorrect answer 2":
+                    jump IncorrectAnswer
 
-        return
+                # Incorrect answer
+                "Incorrect answer 2":
+                    jump IncorrectAnswer
 
-        #Incorrect answer response
-    label incorrectq3:
+    label Question3:
+            $ rightAnswer = "Correct answer3"
+            $ wrongAnswer = "Incorrect answer3"
 
-        e "Oh no! You chose the incorrect answer!"
+            #Question 3
+            e "Insert question 3"
 
-        return
+            menu:
 
-        #Incorrect answer response
-    label incorrectq4:
+                # Incorrect answer
+                "Incorrect answer 3":
+                    jump incorrectAnswer
 
-        e "Oh no! You chose the incorrect answer!"
+                # Correct answer
+                "Incorrect answer 3":
+                    jump incorrectAnswer
 
-    # This ends the game.
+                # Correct answer
+                "Correct answer 3":
+                    jump CorrectAnswer
 
+                # Incorrect answer
+                "Incorrect answer 3":
+                    jump IncorrectAnswer
+
+                # Incorrect answer
+                "Incorrect answer 3":
+                    jump IncorrectAnswer
+
+    # Correct answer response
+    label CorrectAnswer:
+
+        e "[rightAnswer]"
+
+        jump nextQuestion
+
+    #Incorrect answer response
+    label IncorrectAnswer:
+
+        e "[wrongAnswer]"
+
+        jump nextQuestion
+
+# Jump to next question
+    label nextQuestion:
+        $ currentQuestion += 1
+        if currentQuestion == 2:
+            jump Question2
+
+        if currentQuestion == 3:
+            jump Question3
     return
