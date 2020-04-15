@@ -35,8 +35,13 @@ label start:
     $ rightAnswer = "Correct answer"
     $ wrongAnswer = "Incorrect answer"
 
-    #Question 1 here
+    # Use \ with special characters to print them, and use \n to make a new line.
+    # Question 1 here
+    e "Take a look at this quick video, it will assist you in the upcoming question."
+
     $ renpy.movie_cutscene("Dramatic.webm")
+
+    e "If you missed any part of the video, please click the 'Back' button located at the bottom left of the screen."
 
     e "Insert debugging question here"
     menu:

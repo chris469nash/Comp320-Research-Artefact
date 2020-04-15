@@ -35,7 +35,8 @@ label start:
     $ rightAnswer = "Correct answer"
     $ wrongAnswer = "Incorrect answer"
 
-    #Question 1 here
+    # Use \ with special characters to print them, and use \n to make a new line.
+    # Question 1 here
     e "Insert debugging question here"
     menu:
 

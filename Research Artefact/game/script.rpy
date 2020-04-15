@@ -35,7 +35,8 @@ label start:
     $ rightAnswer = "Correct answer"
     $ wrongAnswer = "Incorrect answer"
 
-    #Question 1 here
+    # Use \ with special characters to print them, and use \n to make a new line.
+    # Question 1 here
     e "Insert debugging question here"
     menu:
 
@@ -58,8 +59,6 @@ label start:
         # Incorrect answer
         "Incorrect answer 1":
             jump IncorrectAnswer
-
-        # Correct answer response
 
     label Question2:
             $ rightAnswer = "Correct answer2"
@@ -103,7 +102,7 @@ label start:
                 "Incorrect answer 3":
                     jump incorrectAnswer
 
-                # Correct answer
+                # Incorrect answer
                 "Incorrect answer 3":
                     jump incorrectAnswer
 
