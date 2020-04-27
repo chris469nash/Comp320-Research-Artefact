@@ -37,20 +37,21 @@ label start:
 
     # Use \ with special characters to print them, and use \n to make a new line.
     # Question 1 here
-    e "Insert debugging question here"
+    e "Take a look at the following snippet of code carefully, see if you can figure out the issue."
+    e "passwordInput = input(\"What is the password?\"
+    \nif passwordInput in [\"Password123\");
+    \n___print(\"Correct password, access granted.\")
+    \nelif
+    \nprint(\"Incorrect password, access denied.\"."
     menu:
 
         # Correct answer
-        "Correct answer 1":
+        "passwordInput = input(\"What is the password?\"
+        \nif passwordInput in [\"Password123\");
+        \n___print(\"Correct password, access granted.\")
+        \nelif
+        \n___print(\"Incorrect password, access denied.\".":
             jump CorrectAnswer
-
-        # Incorrect answer
-        "Incorrect answer 1":
-            jump IncorrectAnswer
-
-        # Incorrect answer
-        "Incorrect answer 1":
-            jump IncorrectAnswer
 
         # Incorrect answer
         "Incorrect answer 1":

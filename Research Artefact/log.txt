@@ -1,4 +1,4 @@
-Wed Apr 15 11:57:45 2020
+Mon Apr 27 16:42:42 2020
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
@@ -451,11 +451,11 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1.06999993324s
+Total time until interface ready: 1.09700012207s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.007944 seconds.
-- Frame drawn at 0.008944 seconds.
-- Frame drawn at 0.011944 seconds.
-- Frame drawn at 0.019944 seconds.
-- 0.019944 seconds to render 5 frames.
+- Frame drawn at 0.007945 seconds.
+- Frame drawn at 0.007945 seconds.
+- Frame drawn at 0.013945 seconds.
+- Frame drawn at 0.020945 seconds.
+- 0.020945 seconds to render 5 frames.
