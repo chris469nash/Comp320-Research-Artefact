@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 39: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ' at the end of the first line.)
-        e "greeting = input("Hello, possible pirate! What's the password?)
+File "game/screens.rpy", line 237: end of line expected.
+    text caption style "choice_button_text" text_align 0.0 xalign 0.0
+                                            ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Mon Apr 06 11:07:16 2020
+Wed Apr 29 14:58:19 2020

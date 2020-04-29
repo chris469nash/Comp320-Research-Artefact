@@ -232,7 +232,8 @@ style choice_button is default:
     properties gui.button_properties("choice_button")
 
 style choice_button_text is default:
-    properties gui.button_text_properties("choice_button")
+    properties gui.button_text_properties("choice_button") text_align 0.0 xalign 0.0
+
 
 
 ## Quick Menu screen ###########################################################
