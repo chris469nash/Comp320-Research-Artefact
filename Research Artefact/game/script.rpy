@@ -46,19 +46,26 @@ label start:
     menu:
 
         # Correct answer
-        "passwordInput = input(\"What is the password?\"
-        \nif passwordInput in [\"Password123\");
+        "passwordInput = input(\"What is the password?\"\)
+        \nif passwordInput in [\"Password123\"\];
         \n___print(\"Correct password, access granted.\")
         \nelif
-        \n___print(\"Incorrect password, access denied.\".":
+        \n___print(\"Incorrect password, access denied.\")":
             jump CorrectAnswer
 
         # Incorrect answer
-        "Incorrect answer 1":
+        "passwordInput = input(\"What is the password?\"
+        \nif passwordInput in [\"Password123\");
+        \nprint(\"Correct password, access granted.\")
+        \nelif
+        \nprint(\"Incorrect password, access denied.\"\)":
             jump IncorrectAnswer
 
         # Incorrect answer
-        "Incorrect answer 1":
+        "passwordInput = input(\"What is the password?\"if passwordInput in [\"Password123\");
+        \n___print(\"Correct password, access granted.\")
+        \nelif
+        \n___print(\"Incorrect password, access denied.\"\)":
             jump IncorrectAnswer
 
     label Question2:
@@ -67,6 +74,14 @@ label start:
 
             #Question 2 here
             e "Insert question 2"
+            e "games = \{
+            \n___\"The Elder Scrolls: Morrowind\": \"2002\",
+            \n___\"The Elder Scrolls: Oblivion\": \"2006\",
+            \n___\"The Elder Scrolls: Skyrim\": \"2011\"
+            \n
+            \nfor game releaseDate in game.items\{\}:
+            \n___print \"\%s\" \% games + \" released in \" + \"\%s.\" \% ReleaseDate
+            \n \}"
 
             menu:
 
@@ -75,16 +90,15 @@ label start:
                     jump incorrectAnswer
 
                 # Correct answer
-                "Correct answer 2":
+                "games = \{
+                \n___\"The Elder Scrolls: Morrowind\": \"2002\",
+                \n___\"The Elder Scrolls: Oblivion\": \"2006\",
+                \n___\"The Elder Scrolls: Skyrim\": \"2011\"
+                \n\}
+                \n
+                \nfor game releaseDate in game.items\(\):
+                \n___print \(\"\%s\" \% game + \" released in \" + \"\%s.\" \% releaseDate\)":
                     jump CorrectAnswer
-
-                # Incorrect answer
-                "Incorrect answer 2":
-                    jump IncorrectAnswer
-
-                # Incorrect answer
-                "Incorrect answer 2":
-                    jump IncorrectAnswer
 
                 # Incorrect answer
                 "Incorrect answer 2":
@@ -110,14 +124,6 @@ label start:
                 # Correct answer
                 "Correct answer 3":
                     jump CorrectAnswer
-
-                # Incorrect answer
-                "Incorrect answer 3":
-                    jump IncorrectAnswer
-
-                # Incorrect answer
-                "Incorrect answer 3":
-                    jump IncorrectAnswer
 
     # Correct answer response
     label CorrectAnswer:

@@ -1,0 +1,33 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 77, in script
+    e "games = {
+Exception: Open text tag at end of string u'games = { \n___"The Elder Scrolls: Morrowind": "2002", \n___"The Elder Scrolls: Oblivion": "2006", \n___"The Elder Scrolls: Skyrim": "2011", \n \nfor game releaseDate in game.items{{:'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 77, in script
+    e "games = {
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\ast.py", line 708, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\exports.py", line 1345, in say
+    who(what, *args, **kwargs)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\character.py", line 1142, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\character.py", line 842, in do_display
+    **display_args)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\character.py", line 572, in display_say
+    what_text.update()
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\text\text.py", line 1694, in update
+    tokens = self.tokenize(text)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\text\text.py", line 2164, in tokenize
+    tokens.extend(textsupport.tokenize(i))
+  File "textsupport.pyx", line 122, in renpy.text.textsupport.tokenize
+Exception: Open text tag at end of string u'games = { \n___"The Elder Scrolls: Morrowind": "2002", \n___"The Elder Scrolls: Oblivion": "2006", \n___"The Elder Scrolls: Skyrim": "2011", \n \nfor game releaseDate in game.items{{:'.
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+Research Artefact 1.0
+Thu Apr 30 18:20:38 2020
