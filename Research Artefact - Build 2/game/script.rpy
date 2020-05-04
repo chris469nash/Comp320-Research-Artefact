@@ -52,16 +52,6 @@ label start:
         "Incorrect answer 1":
             jump IncorrectAnswer
 
-        # Incorrect answer
-        "Incorrect answer 1":
-            jump IncorrectAnswer
-
-        # Incorrect answer
-        "Incorrect answer 1":
-            jump IncorrectAnswer
-
-        # Correct answer response
-
     label Question2:
             $ rightAnswer = "Correct answer2"
             $ wrongAnswer = "Incorrect answer2"
@@ -73,19 +63,11 @@ label start:
 
                 # Incorrect answer
                 "Incorrect answer 2":
-                    jump incorrectAnswer
+                    jump IncorrectAnswer
 
                 # Correct answer
                 "Correct answer 2":
                     jump CorrectAnswer
-
-                # Incorrect answer
-                "Incorrect answer 2":
-                    jump IncorrectAnswer
-
-                # Incorrect answer
-                "Incorrect answer 2":
-                    jump IncorrectAnswer
 
                 # Incorrect answer
                 "Incorrect answer 2":
@@ -102,23 +84,16 @@ label start:
 
                 # Incorrect answer
                 "Incorrect answer 3":
-                    jump incorrectAnswer
+                    jump IncorrectAnswer
 
                 # Correct answer
                 "Incorrect answer 3":
-                    jump incorrectAnswer
+                    jump IncorrectAnswer
 
                 # Correct answer
                 "Correct answer 3":
                     jump CorrectAnswer
 
-                # Incorrect answer
-                "Incorrect answer 3":
-                    jump IncorrectAnswer
-
-                # Incorrect answer
-                "Incorrect answer 3":
-                    jump IncorrectAnswer
 
     # Correct answer response
     label CorrectAnswer:

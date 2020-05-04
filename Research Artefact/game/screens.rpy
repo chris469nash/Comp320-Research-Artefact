@@ -135,6 +135,7 @@ style window:
     xfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
+    ypos 405 
 
     background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
@@ -232,7 +233,7 @@ style choice_button is default:
     properties gui.button_properties("choice_button")
 
 style choice_button_text is default:
-    properties gui.button_text_properties("choice_button") text_align 0.0 xalign 0.0
+    properties gui.button_text_properties("choice_button") text_align 0.0 xalign 0
 
 
 

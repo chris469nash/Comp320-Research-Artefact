@@ -87,7 +87,7 @@ label start:
 
                 # Incorrect answer
                 "Incorrect answer 2":
-                    jump incorrectAnswer
+                    jump IncorrectAnswer
 
                 # Correct answer
                 "games = \{
@@ -115,11 +115,11 @@ label start:
 
                 # Incorrect answer
                 "Incorrect answer 3":
-                    jump incorrectAnswer
+                    jump IncorrectAnswer
 
                 # Incorrect answer
                 "Incorrect answer 3":
-                    jump incorrectAnswer
+                    jump IncorrectAnswer
 
                 # Correct answer
                 "Correct answer 3":
