@@ -110,6 +110,14 @@ label start:
 
             #Question 3
             e "Insert question 3"
+            e "year == int.input(\"What year were you born in?\'))
+            \n
+            \nif year <= 2000
+            \n___print (\'You must be above the age of 20!\')
+            \nelif year > 2010 \& year < 2020:
+            \n___print (\"You must be above the age of 10!\")
+            \nelif:
+            \n___print (\"You must be below the age of 10!\")"
 
             menu:
 
@@ -117,13 +125,20 @@ label start:
                 "Incorrect answer 3":
                     jump IncorrectAnswer
 
+                # Correct answer
+                "year = int(input(\"What year were you born in?\"))
+                \n
+                \nif year <= 2000:
+                \n___print (\"You must be above the age of 20!\")
+                \nelif year > 2010 and year < 2020:
+                \n___print (\"You must be above the age of 10!\")
+                \nelse:
+                \n___print (\"You must be below the age of 10!\")":
+                    jump CorrectAnswer
+
                 # Incorrect answer
                 "Incorrect answer 3":
                     jump IncorrectAnswer
-
-                # Correct answer
-                "Correct answer 3":
-                    jump CorrectAnswer
 
     # Correct answer response
     label CorrectAnswer:
