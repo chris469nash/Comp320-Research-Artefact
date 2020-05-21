@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 65: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-            "passwordInput = input(\"What is the password?\" if passwordInput in [\"Password123\")\;
+File "game/screens.rpy", line 34: style property style is not known.
+    style.default.size = 10
+         ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Thu Apr 30 18:00:09 2020
+Wed May 20 13:27:39 2020
