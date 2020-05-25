@@ -47,7 +47,7 @@ label start:
     menu:
 
         # Correct answer
-        "passwordInput = input(\"What is the password?\"\)
+        "passwordInput = input(\"What is the password?\")
         \nif passwordInput in [\"Password123\"\];
         \n___print(\"Correct password, access granted.\")
         \nelif

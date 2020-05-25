@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 54, in script
+    jump incorrectAnswer
+ScriptError: could not find label 'incorrectAnswer'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 54, in script
+    jump incorrectAnswer
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\ast.py", line 1697, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\script.py", line 898, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'incorrectAnswer'.
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+Research Artefact 1.0
+Mon May 25 11:57:28 2020

@@ -37,20 +37,38 @@ label start:
 
     # Use \ with special characters to print them, and use \n to make a new line.
     # Question 1 here
-    e "Insert debugging question here"
+    e "Insert text here"
+
+    e "recaptchaInput = input(\"Please translate enter this recaptcha below: 'R3C4pchTA'.\")
+    \nif recaptchaInput in (\"Recaptcha\"\);
+    \n___print[\"Correct answer, looks like you aren't a robot!\"]
+    \nelif
+    \n___print(\"Incorrect answer, are you a robot?\")"
     menu:
 
+        # Incorrect answer
+        "recaptchaInput = input(\"Please translate and enter this recaptcha below: 'R3C4pchTA'.\")
+        \nif recaptchaInput in [\"Recaptcha\"\];
+        \n___print(\"Incorrect answer, are you a robot?\")
+        \nelif
+        \n___print(\"Correct answer, access granted.\")":
+            jump IncorrectAnswer
+
+        # Incorrect answer
+        "recaptchaInput = input(\"Please translate enter this recaptcha below: 'R3C4pchTA'.\")
+        \nif re captchaInput in ('Recaptcha'\);
+        \n___print[\"Correct answer, looks like you aren't a robot!\"]
+        \nelif
+        \n___print[\"Incorrect answer, are you a robot?\"]":
+            jump IncorrectAnswer
+
         # Correct answer
-        "Correct answer 1":
+        "recaptchaInput = input(\"Please translate and enter this recaptcha below: 'R3C4pchTA'.\")
+        \nif recaptchaInput in [\"Recaptcha\"\];
+        \n___print(\"Correct answer, access granted.\")
+        \nelif
+        \n___print(\"Incorrect answer, are you a robot?\")":
             jump CorrectAnswer
-
-        # Incorrect answer
-        "Incorrect answer 1":
-            jump IncorrectAnswer
-
-        # Incorrect answer
-        "Incorrect answer 1":
-            jump IncorrectAnswer
 
     label Question2:
             $ rightAnswer = "Correct answer2"
