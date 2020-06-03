@@ -37,9 +37,9 @@ label start:
 
     # Use \ with special characters to print them, and use \n to make a new line.
     # Question 1 here
-    e "Insert text here"
+    e "The following code is asking for a translated recaptcha, if the user inputs the wrong recaptcha then it should return \"Incorrect answer, are you a robot?\". If the user inputs the correct recaptcha then it should return \"Correct answer, looks like you aren't a robot!\". Take a look at the following snippet of code carefully, see if you can figure out the issue."
 
-    e "recaptchaInput = input(\"Please translate enter this recaptcha below: 'R3C4pchTA'.\")
+    e "recaptchaInput = input(\"Enter this recaptcha below: 'R3C4pTchA'.\")
     \nif recaptchaInput in (\"Recaptcha\"\);
     \n___print[\"Correct answer, looks like you aren't a robot!\"]
     \nelif
@@ -47,7 +47,7 @@ label start:
     menu:
 
         # Incorrect answer
-        "recaptchaInput = input(\"Please translate and enter this recaptcha below: 'R3C4pchTA'.\")
+        "recaptchaInput = input(\"Enter this recaptcha below: 'R3C4pchTA'.\")
         \nif recaptchaInput in [\"Recaptcha\"\];
         \n___print(\"Incorrect answer, are you a robot?\")
         \nelif
@@ -55,15 +55,15 @@ label start:
             jump IncorrectAnswer
 
         # Incorrect answer
-        "recaptchaInput = input(\"Please translate enter this recaptcha below: 'R3C4pchTA'.\")
-        \nif re captchaInput in ('Recaptcha'\);
+        "recaptchaInput = input(\"Enter this recaptcha below: 'R3C4pchTA'.\")
+        \nif recaptchaInput in ('Recaptcha'\);
         \n___print[\"Correct answer, looks like you aren't a robot!\"]
         \nelif
         \n___print[\"Incorrect answer, are you a robot?\"]":
             jump IncorrectAnswer
 
         # Correct answer
-        "recaptchaInput = input(\"Please translate and enter this recaptcha below: 'R3C4pchTA'.\")
+        "recaptchaInput = input(\"Enter this recaptcha below: 'R3C4pchTA'.\")
         \nif recaptchaInput in [\"Recaptcha\"\];
         \n___print(\"Correct answer, access granted.\")
         \nelif
@@ -75,20 +75,58 @@ label start:
             $ wrongAnswer = "Incorrect answer2"
 
             #Question 2 here
-            e "Insert question 2"
+            e "The following code is a similar exercise based around collections. The code is trying to display the name of the game and it's release date, it should be printing something like this:
+            \n
+            \nFallout 3 was released in 2008
+            \n
+            \nFallout 3, 2008
+            \nFallout New Vegas, 2010
+            \nFallout 4, 2015
+            \n
+            \nSee if you can figure out the problem with the following code snippet."
+
+            e "games = \{
+            \n___\"Fallout 3\": \"2008\",
+            \n___\"Fallout New Vegas\": \"2010\",
+            \n___\"Fallout 4\": \"2015\"
+            \n
+            \nfor game releaseDate in game.items\{\}:
+            \n___print \"\%s\" \% games + \" was released in \" + \"\%s.\" \% ReleaseDate
+            \n\}"
 
             menu:
 
                 # Incorrect answer
-                "Incorrect answer 2":
+                "games = \{
+                \n___\"The Elder Scrolls: Morrowind\": \"2002\",
+                \n___\"The Elder Scrolls: Oblivion\": \"2006\",
+                \n___\"The Elder Scrolls: Skyrim\": \"2011\"
+                \n\}
+                \n
+                \nfor game releaseDate in game.items\{\}:
+                \n___print \{\"\%s\" \% games + \" was released in \" + \"\%s.\" \% releaseDate\}":
                     jump IncorrectAnswer
 
                 # Correct answer
-                "Correct answer 2":
+                "games = \{
+                \n___\"Fallout 3\": \"2008\",
+                \n___\"Fallout New Vegas\": \"2010\",
+                \n___\"Fallout 4\": \"2015\"
+                \n\}
+                \n
+                \nfor game, releaseDate in games.items\(\):
+                \n___print \(\"\%s\" \% game + \" was released in \" + \"\%s.\" \% releaseDate\)":
                     jump CorrectAnswer
 
                 # Incorrect answer
-                "Incorrect answer 2":
+                "Games = \{
+                \n___\"The Elder Scrolls: Morrowind\": 2002,
+                \n___\"The Elder Scrolls: Oblivion\": 2006,
+                \n___\"The Elder Scrolls: Skyrim\": 2011
+                \n\}
+                \n
+                \nfor game releaseDate in game.items\{\}:
+                \n___print \(\"\%s\" \% game + \" was released in \" + \"\%d.\" \% releaseDate\)":
                     jump IncorrectAnswer
 
     label Question3:
@@ -104,7 +142,7 @@ label start:
                 "Incorrect answer 3":
                     jump IncorrectAnswer
 
-                # Correct answer
+                # Incorrect answer
                 "Incorrect answer 3":
                     jump IncorrectAnswer
 

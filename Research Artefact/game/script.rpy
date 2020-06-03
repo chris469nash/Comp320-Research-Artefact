@@ -37,7 +37,8 @@ label start:
 
     # Use \ with special characters to print them, and use \n to make a new line.
     # Question 1 here
-    e "The following code is asking for a password, if the user inputs the wrong password then it should generate a response of \"Incorrect password, access denied.\" Take a look at the following snippet of code carefully, see if you can figure out the issue."
+    e "The following code is asking for a password, if the user inputs the wrong password then it should return, \"Incorrect password, access denied.\". If the user inputs the correct password then it should return \"Correct password, access granted.\". Take a look at the following snippet of code carefully, see if you can figure out the issue."
+
     e "passwordInput = input(\"What is the password?\"
     \nif passwordInput in [\"Password123\");
     \n___print(\"Correct password, access granted.\")
@@ -59,7 +60,7 @@ label start:
         \nif passwordInput in [\"Password123\");
         \nprint(\"Correct password, access granted.\")
         \nelif
-        \nprint(\"Incorrect password, access denied.\"\)":
+        \nprint(\"Incorrect password, access denied.\")":
             jump IncorrectAnswer
 
         # Incorrect answer
@@ -76,19 +77,22 @@ label start:
             #Question 2 here
             e "The following code exercise is based around collections. The code is trying to display the name of the game and it's release date, it should be printing something like this:
             \n
+            \nThe Elder Scrolls: Morrowind was released in 2002
+            \n
             \nThe Elder Scrolls: Morrowind, 2002
             \nThe Elder Scrolls: Oblivion, 2006
             \nThe Elder Scrolls: Skyrim, 2011
             \n
             \nSee if you can figure out the problem with the following code snippet."
+
             e "games = \{
             \n___\"The Elder Scrolls: Morrowind\": \"2002\",
             \n___\"The Elder Scrolls: Oblivion\": \"2006\",
             \n___\"The Elder Scrolls: Skyrim\": \"2011\"
             \n
             \nfor game releaseDate in game.items\{\}:
-            \n___print \"\%s\" \% games + \" released in \" + \"\%s.\" \% ReleaseDate
-            \n \}"
+            \n___print \"\%s\" \% games + \" was released in \" + \"\%s.\" \% ReleaseDate
+            \n\}"
 
             menu:
 
@@ -100,7 +104,7 @@ label start:
                 \n\}
                 \n
                 \nfor game releaseDate in game.items\{\}:
-                \n___print \{\"\%s\" \% games + \" released in \" + \"\%s.\" \% releaseDate\}":
+                \n___print \{\"\%s\" \% games + \" was released in \" + \"\%s.\" \% releaseDate\}":
                     jump IncorrectAnswer
 
                 # Correct answer
@@ -110,8 +114,8 @@ label start:
                 \n___\"The Elder Scrolls: Skyrim\": \"2011\"
                 \n\}
                 \n
-                \nfor game releaseDate in games.items\(\):
-                \n___print \(\"\%s\" \% game + \" released in \" + \"\%s.\" \% releaseDate\)":
+                \nfor game, releaseDate in games.items(\):
+                \n___print \(\"\%s\" \% game + \" was released in \" + \"\%s.\" \% releaseDate\)":
                     jump CorrectAnswer
 
                 # Incorrect answer
@@ -122,7 +126,7 @@ label start:
                 \n\}
                 \n
                 \nfor game releaseDate in game.items\{\}:
-                \n___print \(\"\%s\" \% game + \" released in \" + \"\%d.\" \% releaseDate\)":
+                \n___print \(\"\%s\" \% game + \" was released in \" + \"\%d.\" \% releaseDate\)":
                     jump IncorrectAnswer
 
     label Question3:
