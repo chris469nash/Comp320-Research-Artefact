@@ -134,20 +134,50 @@ label start:
             $ wrongAnswer = "Incorrect answer3"
 
             #Question 3
-            e "Insert question 3"
+            e "The following exercise is a similar exercise based around branches. The following code is trying to create a variable representing the user's height and give a response to the user's input based on their height. See if you can find the errors within the code."
+
+            e "height == int.input(\"How tall are you?'))
+            \n
+            \nif height <= 5'6
+            \n___print (\'You're allowed to ride without an adult!\')
+            \nelif height > 5' \& year < 5'5:
+            \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
+            \nelif:
+            \n___print (\"Sorry! You're too small to ride on this!\")"
 
             menu:
 
                 # Incorrect answer
-                "Incorrect answer 3":
+                "Height == int(input(\"How tall are you?\"))
+                \n
+                \nif height <= 5'6:
+                \n___print (\"You're allowed to ride without an adult!\")
+                \nelse year < 5' & year > 5'5:
+                \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
+                \nelse:
+                \n___print (\"Sorry! You're too small to ride on this!\")":
                     jump IncorrectAnswer
 
                 # Incorrect answer
-                "Incorrect answer 3":
+                "height = int.input(\"How tall are you?\"))
+                \n
+                \nif height >= (\"5'6\"):
+                \n___print (\"You're allowed to ride without an adult!\")
+                \nelif year < 5' and year > 5'5:
+                \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
+                \nelse:
+                \n___print (\"Sorry! You're too small to ride on this!\")":
                     jump IncorrectAnswer
 
                 # Correct answer
-                "Correct answer 3":
+                "height = int(input(\"How tall are you?\"))
+                \n
+                \nif height <= 5'6:
+                \n___print (\"You're allowed to ride without an adult!\")
+                \nelif year > 5' and year < 5'5:
+                \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
+                \nelse:
+                \n___print (\"Sorry! You're too small to ride on this!\")":
                     jump CorrectAnswer
 
 

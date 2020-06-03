@@ -135,7 +135,8 @@ label start:
 
             #Question 3
             e "The following exercise is based around branches. The following code is trying to create a variable representing the user's age and give a response to the user's input based on their age. See if you can find the errors within the code."
-            e "year == int.input(\"What year were you born in?\'))
+
+            e "year == int.input(\"What year were you born in?'))
             \n
             \nif year <= 2000
             \n___print (\'You must be above the age of 20!\')
@@ -169,7 +170,7 @@ label start:
                     jump CorrectAnswer
 
                 # Incorrect answer
-                "year = int(input(\"What year were you born in?\"))
+                "year == int(input(\"What year were you born in?\"))
                 \n
                 \nif year <= 2000:
                 \n___print (\"You must be above the age of 20!\")
