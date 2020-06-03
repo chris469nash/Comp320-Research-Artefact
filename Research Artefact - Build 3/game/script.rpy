@@ -36,16 +36,16 @@ label start:
     $ wrongAnswer = "Incorrect answer"
 
     # Use \ with special characters to print them, and use \n to make a new line.
-    # Question 1 here
+
     e "Take a look at this quick video, it will assist you in the upcoming question."
 
     $ renpy.movie_cutscene("Dramatic.webm")
 
     e "If you missed any part of the video, please click the 'Back' button located at the bottom left of the screen."
+    #Question 1 here
+    e "The following code is asking for a translated recaptcha, if the user inputs the wrong recaptcha then it should return \"Incorrect answer, are you a robot?\". If the user inputs the correct recaptcha then it should return \"Correct answer, looks like you aren't a robot!\". Take a look at the following snippet of code carefully, see if you can figure out the issue."
 
-    e "Insert question here"
-
-    e "recaptchaInput = input(\"Please translate enter this recaptcha below: 'R3C4pchTA'.\")
+    e "recaptchaInput = input(\"Enter this recaptcha below: 'R3C4pTchA'.\")
     \nif recaptchaInput in (\"Recaptcha\"\);
     \n___print[\"Correct answer, looks like you aren't a robot!\"]
     \nelif
@@ -53,7 +53,7 @@ label start:
     menu:
 
         # Incorrect answer
-        "recaptchaInput = input(\"Please translate and enter this recaptcha below: 'R3C4pchTA'.\")
+        "recaptchaInput = input(\"Enter this recaptcha below: 'R3C4pchTA'.\")
         \nif recaptchaInput in [\"Recaptcha\"\];
         \n___print(\"Incorrect answer, are you a robot?\")
         \nelif
@@ -61,15 +61,15 @@ label start:
             jump IncorrectAnswer
 
         # Incorrect answer
-        "recaptchaInput = input(\"Please translate enter this recaptcha below: 'R3C4pchTA'.\")
-        \nif re captchaInput in ('Recaptcha'\);
+        "recaptchaInput = input(\"Enter this recaptcha below: 'R3C4pchTA'.\")
+        \nif recaptchaInput in ('Recaptcha'\);
         \n___print[\"Correct answer, looks like you aren't a robot!\"]
         \nelif
         \n___print[\"Incorrect answer, are you a robot?\"]":
             jump IncorrectAnswer
 
         # Correct answer
-        "recaptchaInput = input(\"Please translate and enter this recaptcha below: 'R3C4pchTA'.\")
+        "recaptchaInput = input(\"Enter this recaptcha below: 'R3C4pchTA'.\")
         \nif recaptchaInput in [\"Recaptcha\"\];
         \n___print(\"Correct answer, access granted.\")
         \nelif
@@ -80,42 +80,118 @@ label start:
             $ rightAnswer = "Correct answer2"
             $ wrongAnswer = "Incorrect answer2"
 
+            e "Take a look at this quick video, it will assist you in the upcoming question."
+
+            $ renpy.movie_cutscene("Dramatic.webm")
+
+            e "If you missed any part of the video, please click the 'Back' button located at the bottom left of the screen."
             #Question 2 here
-            e "Insert question 2"
+            e "The following code is a similar exercise based around collections. The code is trying to display the name of the game and it's release date, it should be printing something like this:
+            \n
+            \nFallout 3 was released in 2008
+            \n
+            \nFallout 3, 2008
+            \nFallout New Vegas, 2010
+            \nFallout 4, 2015
+            \n
+            \nSee if you can figure out the problem with the following code snippet."
+
+            e "games = \{
+            \n___\"Fallout 3\": \"2008\",
+            \n___\"Fallout New Vegas\": \"2010\",
+            \n___\"Fallout 4\": \"2015\"
+            \n
+            \nfor game releaseDate in game.items\{\}:
+            \n___print \"\%s\" \% games + \" was released in \" + \"\%s.\" \% ReleaseDate
+            \n\}"
 
             menu:
 
                 # Incorrect answer
-                "Incorrect answer 2":
-                    jump incorrectAnswer
+                "games = \{
+                \n___\"The Elder Scrolls: Morrowind\": \"2002\",
+                \n___\"The Elder Scrolls: Oblivion\": \"2006\",
+                \n___\"The Elder Scrolls: Skyrim\": \"2011\"
+                \n\}
+                \n
+                \nfor game releaseDate in game.items\{\}:
+                \n___print \{\"\%s\" \% games + \" was released in \" + \"\%s.\" \% releaseDate\}":
+                    jump IncorrectAnswer
 
                 # Correct answer
-                "Correct answer 2":
+                "games = \{
+                \n___\"Fallout 3\": \"2008\",
+                \n___\"Fallout New Vegas\": \"2010\",
+                \n___\"Fallout 4\": \"2015\"
+                \n\}
+                \n
+                \nfor game, releaseDate in games.items\(\):
+                \n___print \(\"\%s\" \% game + \" was released in \" + \"\%s.\" \% releaseDate\)":
                     jump CorrectAnswer
 
                 # Incorrect answer
-                "Incorrect answer 2":
+                "Games = \{
+                \n___\"The Elder Scrolls: Morrowind\": 2002,
+                \n___\"The Elder Scrolls: Oblivion\": 2006,
+                \n___\"The Elder Scrolls: Skyrim\": 2011
+                \n\}
+                \n
+                \nfor game releaseDate in game.items\{\}:
+                \n___print \(\"\%s\" \% game + \" was released in \" + \"\%d.\" \% releaseDate\)":
                     jump IncorrectAnswer
 
     label Question3:
             $ rightAnswer = "Correct answer3"
             $ wrongAnswer = "Incorrect answer3"
 
+            e "Take a look at this quick video, it will assist you in the upcoming question."
+
+            $ renpy.movie_cutscene("Dramatic.webm")
             #Question 3
-            e "Insert question 3"
+            e "The following exercise is a similar exercise based around branches. The following code is trying to create a variable representing the user's height and give a response to the user's input based on their height. See if you can find the errors within the code."
+
+            e "height == int.input(\"How tall are you?'))
+            \n
+            \nif height <= 5'6
+            \n___print (\'You're allowed to ride without an adult!\')
+            \nelif height > 5' \& year < 5'5:
+            \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
+            \nelif:
+            \n___print (\"Sorry! You're too small to ride on this!\")"
 
             menu:
 
                 # Incorrect answer
-                "Incorrect answer 3":
+                "Height == int(input(\"How tall are you?\"))
+                \n
+                \nif height <= 5'6:
+                \n___print (\"You're allowed to ride without an adult!\")
+                \nelse year < 5' & year > 5'5:
+                \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
+                \nelse:
+                \n___print (\"Sorry! You're too small to ride on this!\")":
+                    jump IncorrectAnswer
+
+                # Incorrect answer
+                "height = int.input(\"How tall are you?\"))
+                \n
+                \nif height >= (\"5'6\"):
+                \n___print (\"You're allowed to ride without an adult!\")
+                \nelif year < 5' and year > 5'5:
+                \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
+                \nelse:
+                \n___print (\"Sorry! You're too small to ride on this!\")":
                     jump IncorrectAnswer
 
                 # Correct answer
-                "Incorrect answer 3":
-                    jump IncorrectAnswer
-
-                # Correct answer
-                "Correct answer 3":
+                "height = int(input(\"How tall are you?\"))
+                \n
+                \nif height <= 5'6:
+                \n___print (\"You're allowed to ride without an adult!\")
+                \nelif year > 5' and year < 5'5:
+                \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
+                \nelse:
+                \n___print (\"Sorry! You're too small to ride on this!\")":
                     jump CorrectAnswer
 
     # Correct answer response
