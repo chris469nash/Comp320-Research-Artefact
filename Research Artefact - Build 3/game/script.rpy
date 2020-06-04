@@ -153,9 +153,9 @@ label start:
             e "print(\"How tall are you?\")
             \nheight == int(input())
             \n
-            \nif height <= 5'6
+            \nif height <= 166
             \n___print (\'You're allowed to ride without an adult!\')
-            \nelif height > 5' \& year < 5'5:
+            \nelif height > 152:
             \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
             \nelif:
             \n___print (\"Sorry! You're too small to ride on this!\")"

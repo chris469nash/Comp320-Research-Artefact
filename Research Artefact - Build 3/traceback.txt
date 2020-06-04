@@ -1,46 +1,129 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 39, in script
-    $ renpy.movie_cutscene("Dramatic.webm")
-  File "game/script.rpy", line 39, in <module>
-    $ renpy.movie_cutscene("Dramatic.webm")
-IOError: Couldn't find file 'Dramatic.webm'.
+While processing text tag { 
+___"Fallout 3": "2008", 
+___"Fallout New Vegas": "2010", 
+___"Fallout 4": "2015" 
+ 
+for game releaseDate in game.items{} in u'games = { \n___"Fallout 3": "2008", \n___"Fallout New Vegas": "2010", \n___"Fallout 4": "2015" \n \nfor game releaseDate in game.items{}: \n___print "%s" % games + " was released in " + "%s." % ReleaseDate \n}'.:
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+Exception: Unknown text tag u' \n___"Fallout 3": "2008", \n___"Fallout New Vegas": "2010", \n___"Fallout 4": "2015" \n \nfor game releaseDate in game.items{'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 39, in script
-    $ renpy.movie_cutscene("Dramatic.webm")
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
   File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/script.rpy", line 39, in <module>
-    $ renpy.movie_cutscene("Dramatic.webm")
-  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\exports.py", line 1538, in movie_cutscene
-    roll_forward=roll_forward)
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
   File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\ui.py", line 297, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\core.py", line 2702, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, **kwargs)
-  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\core.py", line 3380, in interact_core
-    renpy.audio.audio.periodic()
-  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\audio\audio.py", line 1060, in periodic
-    six.reraise(exc[0], exc[1], exc[2])
-  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\audio\audio.py", line 1038, in periodic_thread_main
-    periodic_pass()
-  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\audio\audio.py", line 979, in periodic_pass
-    c.periodic()
-  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\audio\audio.py", line 457, in periodic
-    topf = load(self.file_prefix + filename + self.file_suffix)
-  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\audio\audio.py", line 73, in load
-    rv = renpy.loader.load(fn)
-  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\loader.py", line 576, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'Dramatic.webm'.
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\core.py", line 3194, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\core.py", line 2094, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 490, in renpy.display.render.render_screen (gen\renpy.display.render.c:6805)
+    rv = render(root, width, height, st, st)
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\transition.py", line 361, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\screen.py", line 675, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 1127, in render
+    st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 883, in render
+    surf = render(d, rw, height - y, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 1127, in render
+    st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 1691, in render
+    place(pos, x, y, w, h)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 1652, in place
+    rend = render(d, w, h, st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\viewport.py", line 623, in render
+    surf = renpy.display.render.render(c, cw, ch, st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 1127, in render
+    st, at)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\display\layout.py", line 722, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:4075)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 259, in renpy.display.render.render (gen\renpy.display.render.c:3520)
+    rv = d.render(widtho, heighto, st, at)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\text\text.py", line 1996, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\text\text.py", line 597, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "C:\Program Files (x86)\renpy-7.3.5-sdk\renpy\text\text.py", line 1179, in segment
+    raise Exception("Unknown text tag %r" % text)
+Exception: Unknown text tag u' \n___"Fallout 3": "2008", \n___"Fallout New Vegas": "2010", \n___"Fallout 4": "2015" \n \nfor game releaseDate in game.items{'
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 Research Artefact 1.0
-Wed Apr 01 14:45:06 2020
+Thu Jun 04 14:38:21 2020
