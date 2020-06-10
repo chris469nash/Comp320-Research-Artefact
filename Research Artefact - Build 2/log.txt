@@ -1,4 +1,4 @@
-Wed Jun 10 13:08:58 2020
+Wed Jun 10 19:02:57 2020
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
@@ -24,12 +24,12 @@ Creating interface object took 0.06s
 Cleaning stores took 0.00s
 Init translation took 0.01s
 Build styles took 0.00s
-Load screen analysis took 0.03s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
 Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.02s
@@ -450,18 +450,11 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 1.02700018883s
+Total time until interface ready: 1.1779999733s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
 - Frame drawn at 0.007944 seconds.
-- Frame drawn at 0.007944 seconds.
-- Frame drawn at 0.009944 seconds.
+- Frame drawn at 0.008944 seconds.
+- Frame drawn at 0.008944 seconds.
 - Frame drawn at 0.016944 seconds.
 - 0.016944 seconds to render 5 frames.
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s

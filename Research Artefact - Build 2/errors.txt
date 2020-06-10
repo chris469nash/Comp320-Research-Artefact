@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 74: end of line expected.
-    jump Question2:
-                  ^
+File "game/script.rpy", line 17: end of line expected.
+    scene bg room.jpg
+                 ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Tue Mar 10 22:04:18 2020
+Wed Jun 10 18:12:48 2020
