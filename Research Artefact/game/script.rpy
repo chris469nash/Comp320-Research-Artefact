@@ -130,8 +130,8 @@ label start:
                     jump IncorrectAnswer
 
     label Question3:
-            $ rightAnswer = "Well done! You got this exercise correct!"
-            $ wrongAnswer = "Oh no! You got this exercise incorrect! The incorrect options within this exercise contained the incorrect placements of the '<' and '>' symbols. Integers need to have open and closed brackets in order to be used and when assigning a value, you don't need to make use of inverted commas."
+            $ rightAnswer = "Well done! You got this exercise correct! \n \nThank you for taking the time to complete the first set of exercises! Please continue and complete the next set of exercises from the following build that has been assigned to you."
+            $ wrongAnswer = "Oh no! You got this exercise incorrect! The incorrect options within this exercise contained the incorrect placements of the '<' and '>' symbols. Integers need to have open and closed brackets in order to be used and when assigning a value, you don't need to make use of inverted commas. \n \nThank you for taking the time to complete the first set of exercises! Please continue and complete the next set of exercises from the following build that has been assigned to you."
 
             #Question 3
             e "The following exercise is based around branches. The following code is trying to create a variable representing the user's age and give a response to the user's input based on their age. See if you can find the errors within the code."

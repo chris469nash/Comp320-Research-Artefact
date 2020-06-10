@@ -32,8 +32,8 @@ label start:
 
     label Question1:
     $ currentQuestion = 1
-    $ rightAnswer = "Correct answer"
-    $ wrongAnswer = "Incorrect answer"
+    $ rightAnswer = "Well done! You got this exercise correct!"
+    $ wrongAnswer = "Oh no! You got this exercise incorrect!\n \nOption 1 had the responses in an incorrect order, the first print string should have returned \"Correct answer, looks like you aren't a robot!\" and the second print string should have returned \"Incorrect answer, are you a robot?\" \n \nOption 2 contained the inccorect use of '[' and ']' for a print string, they should be using '(' and ')'."
 
     # Use \ with special characters to print them, and use \n to make a new line.
     # Question 1 here
@@ -71,8 +71,8 @@ label start:
             jump CorrectAnswer
 
     label Question2:
-            $ rightAnswer = "Correct answer2"
-            $ wrongAnswer = "Incorrect answer2"
+            $ rightAnswer = "Well done! You got this exercise correct!"
+            $ wrongAnswer = "Oh no! You got this exercise incorrect! \n \nOption 1 had syntax errors that made use of curly braces instead of using '(' and ')' to input the string and after the 'game.items'! \n \nOption 3 also had syntax errors, naming conventions weren't consistent throughout!"
 
             #Question 2 here
             e "The following code is a similar exercise based around collections. The code is trying to display the name of the game and it's release date, it should be printing something like this:
@@ -125,13 +125,13 @@ label start:
                 \n___\"Fallout 4\": \"2015\"
                 \n\}
                 \n
-                \nfor game releaseDate in game.items\{\}:
+                \nfor game ReleaseDate in game.items\(\):
                 \n___print \(\"\%s\" \% game + \" was released in \" + \"\%d.\" \% releaseDate\)":
                     jump IncorrectAnswer
 
     label Question3:
-            $ rightAnswer = "Correct answer3"
-            $ wrongAnswer = "Incorrect answer3"
+            $ rightAnswer = "Well done! You got this exercise correct! \n \nThank you for participating within this study! If you would like to read the dissertation that is connected to this research artefact then please send an email expressing interest in this to CN196703@falmouth.ac.uk and I will send you a copy once completed!"
+            $ wrongAnswer = "Oh no! You got this exercise incorrect! \n \nOption 1 has its print strings in the wrong order, whilst this code would run, it would return with the incorrect intended responses! \n \nOption 2 contained 'int.input())', it needed to be 'int(input()). Option 2 also had the '<' and '>' symbols the incorrect way around! \n \nThank you for participating within this study! If you would like to read the dissertation that is connected to this research artefact then please send an email expressing interest in this to CN196703@falmouth.ac.uk and I will send you a copy once completed!"
 
             #Question 3
             e "The following exercise is a similar exercise based around branches. The following code is trying to create a variable representing the user's height and give a response to the user's input based on their height. See if you can find the errors within the code."
@@ -152,19 +152,19 @@ label start:
                 "print(\"How tall are you?\")
                 \nheight == int(input())
                 \n
-                \nif height <= 166:
+                \nif height >= 166:
+                \n___print (\"Sorry! You're too small to ride on this!\")
+                \nelse height > 152:
                 \n___print (\"You're allowed to ride without an adult!\")
-                \nelse height < 152:
-                \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
                 \nelse:
-                \n___print (\"Sorry! You're too small to ride on this!\")":
+                \n___print (\"You're allowed to ride but must be accompanied by an adult!\")":
                     jump IncorrectAnswer
 
                 # Incorrect answer
                 "print(\"How tall are you?\")
                 \nheight = int.input())
                 \n
-                \nif height >= (\"166\"):
+                \nif height <= (\"166\"):
                 \n___print (\"You're allowed to ride without an adult!\")
                 \nelif height < 152:
                 \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
