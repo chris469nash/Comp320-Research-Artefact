@@ -32,8 +32,8 @@ label start:
 
     label Question1:
     $ currentQuestion = 1
-    $ rightAnswer = "Correct answer"
-    $ wrongAnswer = "Incorrect answer"
+    $ rightAnswer = "Well done! You got this exercise correct!"
+    $ wrongAnswer = "Oh no! You got this exercise incorrect. Ensure correct indentations for print strings and make sure there are no syntax errors throughout your code!"
 
     # Use \ with special characters to print them, and use \n to make a new line.
     # Question 1 here
@@ -71,8 +71,8 @@ label start:
             jump IncorrectAnswer
 
     label Question2:
-            $ rightAnswer = "Correct answer2"
-            $ wrongAnswer = "Incorrect answer2"
+            $ rightAnswer = "Well done! You got this exercise correct!"
+            $ wrongAnswer = "Oh no! You got this exercise incorrect. The incorrect options had syntax errors. Naming conventions need to be persistent throughout the code!"
 
             #Question 2 here
             e "The following code exercise is based around collections. The code is trying to display the name of the game and it's release date, it should be printing something like this:
@@ -103,7 +103,7 @@ label start:
                 \n___\"The Elder Scrolls: Skyrim\": \"2011\"
                 \n\}
                 \n
-                \nfor game releaseDate in game.items\{\}:
+                \nfor game ReleaseDate in game.items\{\}:
                 \n___print \{\"\%s\" \% games + \" was released in \" + \"\%s.\" \% releaseDate\}":
                     jump IncorrectAnswer
 
@@ -130,8 +130,8 @@ label start:
                     jump IncorrectAnswer
 
     label Question3:
-            $ rightAnswer = "Correct answer3"
-            $ wrongAnswer = "Incorrect answer3"
+            $ rightAnswer = "Well done! You got this exercise correct!"
+            $ wrongAnswer = "Oh no! You got this exercise incorrect! The incorrect options within this exercise contained the incorrect placements of the '<' and '>' symbols. Integers need to have open and closed brackets in order to be used and when assigning a value, you don't need to make use of inverted commas."
 
             #Question 3
             e "The following exercise is based around branches. The following code is trying to create a variable representing the user's age and give a response to the user's input based on their age. See if you can find the errors within the code."
