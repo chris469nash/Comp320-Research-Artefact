@@ -28,6 +28,8 @@ label start:
 
     e "Please take your time to answer each question, your data from these results is crucial to my dissertation!"
 
+    e "Hi! I'm Eileen, i'll be here to help you throughout this set of exercises! Let's get into it!"
+
 # Add strings for each
 
     label Question1:

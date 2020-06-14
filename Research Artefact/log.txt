@@ -1,11 +1,11 @@
-Sun Jun 14 11:57:35 2020
+Sun Jun 14 12:12:26 2020
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
 
 Bootstrap to the start of init.init took 0.05s
 Early init took 0.00s
-Loader init took 0.01s
+Loader init took 0.02s
 Loading error handling took 0.02s
 Loading script took 0.07s
 Loading save slot metadata. took 0.01s
@@ -24,7 +24,7 @@ Creating interface object took 0.06s
 Cleaning stores took 0.00s
 Init translation took 0.01s
 Build styles took 0.00s
-Load screen analysis took 0.02s
+Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
 Prepare screens took 0.04s
@@ -32,7 +32,7 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.02s
+Interface start took 0.01s
 
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
@@ -450,11 +450,11 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 0.977999925613s
+Total time until interface ready: 0.943000078201s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.008945 seconds.
-- Frame drawn at 0.008945 seconds.
+- Frame drawn at 0.007945 seconds.
+- Frame drawn at 0.007945 seconds.
 - Frame drawn at 0.009944 seconds.
-- Frame drawn at 0.016944 seconds.
-- 0.016944 seconds to render 5 frames.
+- Frame drawn at 0.018945 seconds.
+- 0.018945 seconds to render 5 frames.
