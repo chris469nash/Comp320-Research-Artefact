@@ -39,7 +39,7 @@ label start:
 
     e "Take a look at this quick video, it will assist you in the upcoming question."
 
-    $ renpy.movie_cutscene("Dramatic.webm")
+    $ renpy.movie_cutscene("Build3Video1.webm")
 
     e "If you missed any part of the video, please click the 'Back' button located at the bottom left of the screen."
     #Question 1 here
@@ -78,11 +78,11 @@ label start:
 
     label Question2:
             $ rightAnswer = "Well done! You got this exercise correct!"
-            $ wrongAnswer = "Oh no! You got this exercise incorrect! \n \nOption 1 had syntax errors that made use of curly braces instead of using '(' and ')' to input the string and after the 'game.items'! \n \nOption 3 also had syntax errors, naming conventions weren't consistent throughout!"
+            $ wrongAnswer = "Oh no! You got this exercise incorrect! \n \nOption 1 had syntax errors that made use of square brackets instead of using '(' and ')' to input the string and after the 'game.items'! \n \nOption 3 also had syntax errors, naming conventions weren't consistent throughout!"
 
             e "Take a look at this quick video, it will assist you in the upcoming question."
 
-            $ renpy.movie_cutscene("Dramatic.webm")
+            $ renpy.movie_cutscene("Build3Video2.webm")
 
             e "If you missed any part of the video, please click the 'Back' button located at the bottom left of the screen."
             #Question 2 here
@@ -146,7 +146,7 @@ label start:
 
             e "Take a look at this quick video, it will assist you in the upcoming question."
 
-            $ renpy.movie_cutscene("Dramatic.webm")
+            $ renpy.movie_cutscene("Build3Video3.webm")
             #Question 3
             e "The following exercise is a similar exercise based around branches. The following code is trying to create a variable representing the user's height and give a response to the user's input based on their height. See if you can find the errors within the code."
 

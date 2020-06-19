@@ -74,7 +74,7 @@ label start:
 
     label Question2:
             $ rightAnswer = "Well done! You got this exercise correct!"
-            $ wrongAnswer = "Oh no! You got this exercise incorrect! \n \nOption 1 had syntax errors that made use of curly braces instead of using '(' and ')' to input the string and after the 'game.items'! \n \nOption 3 also had syntax errors, naming conventions weren't consistent throughout!"
+            $ wrongAnswer = "Oh no! You got this exercise incorrect! \n \nOption 1 had syntax errors that made use of square brackets instead of using '(' and ')' to input the string and after the 'game.items'! \n \nOption 3 also had syntax errors, naming conventions weren't consistent throughout!"
 
             #Question 2 here
             e "The following code is a similar exercise based around collections. The code is trying to display the name of the game and it's release date, it should be printing something like this:
