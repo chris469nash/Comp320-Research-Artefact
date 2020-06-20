@@ -46,6 +46,9 @@ label start:
     \n___print[\"Correct answer, looks like you aren't a robot!\"]
     \nelif
     \n___print(\"Incorrect answer, are you a robot?\")"
+
+    e "I think I can see a few issues with this code snippet, we need to make sure the order and spelling is correct and incorrect uses of symbols! "
+
     menu:
 
         # Incorrect answer
@@ -95,6 +98,8 @@ label start:
             \nfor game releaseDate in game.items\{\}:
             \n___print \"\%s\" \% games + \" was released in \" + \"\%s.\" \% ReleaseDate
             \n\}"
+
+            e "Just like the previous exercise, I think we have a few of the same issues that were in the last exercise! We need to make sure naming conventions are thorough and to keep an eye out for spelling mistakes!"
 
             menu:
 
@@ -147,6 +152,8 @@ label start:
             \n___print (\"You're allowed to ride but must be accompanied by an adult!\")
             \nelif:
             \n___print (\"Sorry! You're too small to ride on this!\")"
+
+            e "We're doing pretty well so far! I've learnt a lot from the previous two exercises, lets make sure we take care to keep an eye out for any issues within this final exercise. This exercise looks to be a bit trickier than the others, we need to make sure the symbols and values are in the correct order! We got this!"
 
             menu:
 
