@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592402950339.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "40541661",
+    "id" : "FEC5300E",
+    "lastKnownWriteTime" : 1592403360,
+    "last_content_update" : 1592403360716,
+    "path" : "~/Uni - Third Year/RStudio/Build two  + three results group A + B/Build two + three results A + B/Build two + three results A + B.R",
+    "project_path" : "Build two + three results A + B.R",
+    "properties" : {
+        "cursorPosition" : "15,100",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592404424534.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "815862969",
+    "id" : "B5995EAA",
+    "lastKnownWriteTime" : 1592404594,
+    "last_content_update" : 1592404594765,
+    "path" : "~/Uni - Third Year/RStudio/Build One + Build three test group B/Build One + build three test group B.R",
+    "project_path" : "Build One + build three test group B.R",
+    "properties" : {
+        "cursorPosition" : "15,100",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
